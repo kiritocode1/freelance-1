@@ -10,7 +10,7 @@ import {Book, Mail  , BookOpen} from 'lucide-react'
 const Navbar: FC= () => {
     return (
 		<div className="flex justify-between items-center w-full text-xl  z-30  sticky top-0  p-3">
-			<div className="flex items-center">logo @2024</div>
+			<div className="flex items-center anim">Thembekile @2024</div>
 			<div className="flex items-center gap-4">
 				<MagneticFramer>
 					<Mail className="w-8 h-8 stroke-1" />
