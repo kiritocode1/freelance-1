@@ -7,12 +7,12 @@ import { InViewImagesGrid } from "@/components/ImageGrid";
 
 const App: React.FC = () => {
 	return (
-		<div className="w-full  flex items-center flex-col pt-32 min-h-[800vh]">
+		<div className="w-full  flex items-center flex-col  min-h-[800vh] md:pt-42  pt-96">
 			<ExpandImageEffect
 				imageUrl="/t-1.png"
 				projectNumber="1"
-				text="This is the Visual Effect "
-				expandText="I made."
+				text="The Spiritual Growth "
+				expandText="She made."
 			/>
 
 			<ExpandImageEffectCenter
@@ -35,7 +35,7 @@ const App: React.FC = () => {
 				description="As we delve deeper into the mysteries of the cosmos, we encounter the profound realization that the universe itself breathes in a rhythm of creation and dissolution, a cosmic dance that mirrors the cycles of life and death on our own planet. Stars are born from the dust, shining fiercely against the dark, only to eventually fade or explode in a dazzling finale, their remnants seeding future stars, planets, and perhaps, life itself. This celestial cycle reflects the very essence of the Dao, emphasizing the interconnectedness of all things, the perpetual motion and transformation that is the hallmark of existence."
 			/>
 
-			<div className="w-full min-h-[300vh] pt-96 ">
+			<div className="w-full min-h-[300vh]  ">
 				<InViewImagesGrid />
 			</div>
 		</div>
