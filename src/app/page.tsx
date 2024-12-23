@@ -9,14 +9,14 @@ const App: React.FC = () => {
 	return (
 		<div className="w-full  flex items-center flex-col pt-32">
 			<ExpandImageEffect
-				imageUrl="/yippe.gif"
+				imageUrl="/t-1.png"
 				projectNumber="1"
 				text="This is the Visual Effect "
 				expandText="I made."
 			/>
 
 			<ExpandImageEffectCenter
-				imageUrl="/yippe.gif"
+				imageUrl="/t-1.png"
 				projectNumber="2"
 				beforeText="The feeling Of Growth,"
 				centerLeftText="bloom"
@@ -26,7 +26,7 @@ const App: React.FC = () => {
 			/>
 
 			<ExpandImageEffectRight
-				imageUrl="/yippe.gif"
+				imageUrl="/t-1.png"
 				projectNumber="3"
 				line1="Let the miles unfurl"
 				line2="like stories each"
