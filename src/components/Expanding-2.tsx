@@ -99,7 +99,7 @@ export const ExpandImageEffectCenter: React.FC<ExpandImageEffectProps> = ({ imag
 
 	return (
 		<div className="content content--center">
-			<h3 className="meta">Project {projectNumber}</h3>
+			<h3 className="meta">Intro {projectNumber}</h3>
 			<h2
 				className="type"
 				ref={wrapperRef}

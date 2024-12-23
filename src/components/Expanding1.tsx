@@ -87,44 +87,43 @@ export const ExpandImageEffect: React.FC<ExpandImageEffectProps> = ({
 
     // Rest of the component remains the same
     return (
-        <div className="content content--left">
-            <h3 className="meta">Project {projectNumber}</h3>
-            <h2
-                className="type"
-                ref={wrapperRef}
-                data-expand-1
-            >
-                {text.split("<br />").map((line, index) => (
-                    <React.Fragment key={index}>
-                        {line}
-                        <br />
-                    </React.Fragment>
-                ))}
-                <span className="type__expand type__expand--inline type__expand--reveal">
-                    <span
-                        className="type__expand-img"
-                        ref={imageRef}
-                    >
-                        <span
-                            className="type__expand-img-inner"
-                            style={{ backgroundImage: `url(${imageUrl})` }}
-                        />
-                    </span>
-                    <span
-                        className="anim skewed"
-                        ref={expandTextRef}
-                    >
-                        {expandText}
-                    </span>
-                </span>
-            </h2>
-            <p
-                className="block"
-                ref={textBlockRef}
-            >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolor! Rerum, maiores voluptates. Nisi, labore impedit optio similique culpa, suscipit repellat magnam quia, nesciunt
-                veniam debitis. Quae assumenda eveniet minima magni ipsa velit quas?
-            </p>
-        </div>
-    );
+		<div className="content content--left">
+			<h3 className="meta">Intro {projectNumber}</h3>
+			<h2
+				className="type"
+				ref={wrapperRef}
+				data-expand-1
+			>
+				{text.split("<br />").map((line, index) => (
+					<React.Fragment key={index}>
+						{line}
+						<br />
+					</React.Fragment>
+				))}
+				<span className="type__expand type__expand--inline type__expand--reveal">
+					<span
+						className="type__expand-img"
+						ref={imageRef}
+					>
+						<span
+							className="type__expand-img-inner"
+							style={{ backgroundImage: `url(${imageUrl})` }}
+						/>
+					</span>
+					<span
+						className="anim skewed"
+						ref={expandTextRef}
+					>
+						{expandText}
+					</span>
+				</span>
+			</h2>
+			<p
+				className="block"
+				ref={textBlockRef}
+			>
+				In the stillness of your breath lies the universe; within your heartbeat, eternity whispers. Walk gently, for every step is sacred. Seek within, and the light shall guide your path.
+			</p>
+		</div>
+	);
 };

@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import MagneticFramer from './Magnet'
 
-import {Book, Mail  , BookOpen} from 'lucide-react'
+import {Book  } from 'lucide-react'
+import Link from 'next/link';
 
 
 
@@ -10,19 +11,19 @@ import {Book, Mail  , BookOpen} from 'lucide-react'
 const Navbar: FC= () => {
     return (
 		<div className="flex justify-between items-center w-full text-xl  z-30  sticky top-0  p-3">
-			<div className="flex items-center anim">Thembekile @2024</div>
+			<Link className="flex items-center anim" href={"/"}>Thembekile @2024</Link>
 			<div className="flex items-center gap-4">
 				<MagneticFramer>
-					<Mail className="w-8 h-8 stroke-1" />
+					<Link href="/about">About</Link>
 				</MagneticFramer>
 				<MagneticFramer>
-					<BookOpen className="w-8 h-8 stroke-1" />
+					<Link href="/contact">Contacts</Link>
 				</MagneticFramer>
 				<MagneticFramer>
-					<div className='flex gap-2 cursor-pointer '>
+					<Link className="flex gap-2 cursor-pointer " href="/order">
 						<Book className="w-8 h-8 stroke-1" />
 						Order Now
-					</div>
+					</Link>
 				</MagneticFramer>
 			</div>
 		</div>

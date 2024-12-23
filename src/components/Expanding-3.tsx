@@ -96,7 +96,7 @@ export const ExpandImageEffectRight: React.FC<ExpandImageEffectRightProps> = ({
 
     return (
         <div className="content content--right">
-            <h3 className="meta">Project {projectNumber}</h3>
+            <h3 className="meta">Intro {projectNumber}</h3>
             <h2 className="type" ref={wrapperRef} data-expand-3>
                 {line1}<br />
                 {line2}<br />
